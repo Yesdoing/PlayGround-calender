@@ -49,30 +49,23 @@ public class printDayMonth {
 	}
 
 	private static int indentDay(String day) {
-		int indent = 0;
 		switch (day) {
 		case "일":
-			indent = 0;
-			break;
+			return 0;
 		case "월":
-			indent = 1;
-			break;
+			return 1;
 		case "화":
-			indent = 2;
-			break;
+			return 2;
 		case "수":
-			indent = 3;
-			break;
+			return 3;
 		case "목":
-			indent = 4;
-			break;
+			return 4;
 		case "금":
-			indent = 5;
-			break;
+			return 5;
 		case "토":
-			indent = 6;
-			break;
+			return 6;
+		default:
+			return 0;
 		}
-		return indent;
 	}
 }
